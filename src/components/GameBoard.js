@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 const GameBoard = (props) => {
-  //{maze, randomPositions, boardWidth, boardHeight, totalMoves, playerPosition} = props;
-
-  // console.log(props.maze);
-  // console.log("random Pos : ", props.randomPositions);
-  // console.log("width : ", props.boardWidth, "height : ", props.boardHeight);
-  // console.log("player pos : ", props.playerPosition);
-  // console.log("total moves : ", props.totalMoves);
-
   const [randomPosLen, setRandomPosLen] = useState(
     props.randomPositions.length
   );
@@ -27,7 +19,6 @@ const GameBoard = (props) => {
   if (!props.maze) {
     return <h1>Loading...</h1>;
   }
-  console.log(props);
 
   function handleCellContent(x, y) {
     if (props.playerPosition.x === x && props.playerPosition.y === y) {
@@ -48,13 +39,9 @@ const GameBoard = (props) => {
     else return " ";
   }
 
-  console.log(props.maze);
-  console.log(props.randomPositions);
-
   return (
     <table>
       <tbody>
-        {" "}
         {props.maze.map((row, x) => (
           <tr key={x}>
             {row.map((cell, y) => (

@@ -56,12 +56,6 @@ const Game = (props) => {
       }
     }
     setRandomPositions((_) => randomPos);
-    //console.log("width : ", boardWidth, "Height : ", boardHeight);
-    // if (boardWidth > 0 && boardHeight > 0) {
-    //   let _maze = generateMaze(boardWidth, boardHeight);
-    //   setMaze(() => _maze);
-    // }
-    // setShowGameBoard(true);
   }
 
   function countTotalMoves() {
@@ -76,8 +70,6 @@ const Game = (props) => {
     if (boardWidth > 0 && boardHeight > 0) {
       generateCollectables();
 
-      //console.log("width : ", boardWidth, "Height : ", boardHeight);
-      //let _maze = generateMaze(boardWidth, boardHeight);
       setMaze(() => generateMaze(boardWidth, boardHeight));
     }
   }, [boardWidth, boardHeight]);
@@ -150,12 +142,6 @@ const Game = (props) => {
 
     countTotalMoves();
   };
-
-  // console.log(maze);
-  // console.log("random Pos : ", randomPositions);
-  // console.log("width : ", boardWidth, "height : ", boardHeight);
-  // console.log("player pos : ", playerPosition);
-  // console.log("total moves : ", totalMoves);
 
   return (
     <div className="main-container">

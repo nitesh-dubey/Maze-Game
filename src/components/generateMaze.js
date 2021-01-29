@@ -13,8 +13,6 @@ export function generateMaze(boardWidth, boardHeight) {
   ];
   let randomRowIndices = _.shuffle([...Array(bHeight).keys()]);
   let randomColIndices = _.shuffle([...Array(bWidth).keys()]);
-  console.log("random Rows : ", randomRowIndices);
-  console.log("random Cols : ", randomColIndices);
 
   function getRandomUnvisitedNeighbour(currCell) {
     let x = currCell.x,
