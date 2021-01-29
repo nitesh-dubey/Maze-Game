@@ -3,7 +3,7 @@ This Repository contains Maze Game Built using Reactjs with "hunt and Kill" Maze
 
 Visit the link below to play with it !
 
-# Demo App
+# Link
 https://nitesh-dubey.github.io/Maze-Game
 
 ## Getting Started with Create React App
